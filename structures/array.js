@@ -1,5 +1,5 @@
 // Khai báo
-let arr = [1,2,3,4,5,6,7,8,9,10,11,12];
+let arr = [1,2,3,4,5,6,7,8,9,10,11,12,14];
 // kích thước cố định sau khi khai báo, tuy nhiên trong js và py kích thước có thể thay đổi khi cần
 // truy cập trực tiếp thông qua chỉ số index
 // cùng kiểu dữ liệu
