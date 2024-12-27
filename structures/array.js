@@ -1,5 +1,5 @@
 // Khai báo
-let arr = [1,2,3,4,5,6,7,8,9];
+let arr = [1,2,3,4,5,6,7,8,9,10,11,12];
 // kích thước cố định sau khi khai báo, tuy nhiên trong js và py kích thước có thể thay đổi khi cần
 // truy cập trực tiếp thông qua chỉ số index
 // cùng kiểu dữ liệu
@@ -7,7 +7,7 @@ let arr = [1,2,3,4,5,6,7,8,9];
 // truy cập phần tử trong mảng 
 arr[0]; // phần  tử đâù tiên
 
-arr.push(10)// thêm phần tử vào cuối mảng
+arr.push(15)// thêm phần tử vào cuối mảng
 arr.pop()// xoá phần tử cuối
 arr.forEach();// duyêtj mảng
 
