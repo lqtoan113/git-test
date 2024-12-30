@@ -1,0 +1,51 @@
+- Factory Pattern: 
+    + Được sử dụng để tách biệt logic tạo đối tượng khỏi logic sử dụng đối tượng.
+    Thay vì khởi tạo đối tượng trực tiếp bằng từ khóa new, chúng ta sử dụng một factory method để tạo đối tượng.
+
+
+- Builder Pattern: 
+    + Tách biệt việc tạo một đối tượng phức tạp thành nhiều bước riêng biệt,
+    giúp bạn có thể thay đổi cấu trúc của đối tượng mà không thay đổi mã nguồn của client.
+        * Builder: giúp tạo đối tượng phức tạp mà không cần chỉ định quá nhiều chi tiết về cách tạo ra nó.
+        * Director: là lớp điều khiển quá trình xây dựng đối tượng (nếu cần).
+        * Product: là đối tượng cuối cùng được xây dựng.
+
+
+- Singleton Pattern:
+    + Đảm bảo rằng một lớp chỉ có một thể hiện duy nhất và cung cấp một phương thức toàn cục (global) để truy cập đối tượng đó.
+    + Mẫu thiết kế này thường được sử dụng cho các đối tượng quản lý trạng thái toàn cục,
+    chẳng hạn như cấu hình hệ thống, kết nối cơ sở dữ liệu, hay các đối tượng lưu trữ thông tin toàn cục.
+
+
+- Observer Pattern:
+    + Giúp duy trì sự đồng bộ giữa các đối tượng trong khi không làm tăng sự phụ thuộc giữa chúng. 
+    Khi đối tượng Subject thay đổi trạng thái, tất cả các đối tượng Observer sẽ được tự động thông báo 
+    và cập nhật theo trạng thái mới của đối tượng Subject.
+
+
+- Iterator Pattern:
+    + Cung cấp một cách tiếp cận thống nhất để truy cập các phần tử của một tập hợp (collection) 
+    mà không cần phải biết chi tiết về cách tổ chức nội bộ của tập hợp đó.
+        * Iterator: cho phép bạn duyệt qua các phần tử của tập hợp mà không cần phải biết cấu trúc bên trong của nó.
+        * Aggregate: (hoặc Collection) là đối tượng chứa các phần tử mà bạn muốn lặp qua. Nó cung cấp một phương thức để lấy đối tượng Iterator.
+        * ConcreteIterator: là lớp triển khai cụ thể của Iterator, chịu trách nhiệm duyệt qua các phần tử trong tập hợp.
+        * Client: là đối tượng sử dụng Iterator để duyệt qua các phần tử mà không cần biết chi tiết về tập hợp.
+
+
+- Behavioral:
+    + Giúp điều phối và tối ưu hóa giao tiếp giữa các đối tượng trong hệ thống. 
+    Những mẫu này chủ yếu giải quyết vấn đề về việc đối tượng nào nên chịu trách nhiệm gì trong một tình huống giao tiếp cụ thể, 
+    cách các đối tượng phối hợp và làm việc cùng nhau, cũng như cách chia sẻ thông tin.
+
+
+- Adapter:
+    + Hoạt động như một "cầu nối" giữa hai lớp không tương thích. 
+    Nó cung cấp một cách để bạn sử dụng một lớp có giao diện khác với những gì bạn cần mà không phải thay đổi mã nguồn của lớp đó. 
+    Adapter sẽ chuyển đổi các phương thức hoặc dữ liệu từ lớp này sang lớp khác sao cho hai lớp có thể giao tiếp với nhau một cách hiệu quả.
+
+
+- Facade: 
+    + Tạo ra một "mặt tiền" đơn giản cho các hệ thống hoặc lớp phức tạp, giúp người sử dụng hệ thống chỉ cần tương tác với một đối tượng duy nhất 
+    mà không cần phải hiểu biết chi tiết về các lớp hoặc hệ thống bên trong. Đây là cách ẩn giấu sự phức tạp của hệ thống, giúp người dùng dễ dàng sử dụng.
+
+

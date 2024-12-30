@@ -1,0 +1,54 @@
+1. Factory Pattern
+
+    Mục đích: Tạo ra các đối tượng mà không cần chỉ định chính xác lớp đối tượng cần tạo.
+    Ứng dụng: Khi cần tạo các đối tượng cùng loại nhưng có sự khác biệt.
+    Ví dụ: Factory Method giúp tạo các đối tượng Task mà không cần biết chi tiết từng loại công việc.
+
+
+2. Builder Pattern
+
+    Mục đích: Tách biệt quá trình xây dựng một đối tượng từ cách sử dụng đối tượng đó.
+    Ứng dụng: Khi đối tượng có cấu trúc phức tạp với nhiều tham số.
+    Ví dụ: Dùng Builder để tạo đối tượng Task với nhiều thuộc tính mà không cần gọi nhiều constructor.
+
+
+3. Singleton Pattern
+
+    Mục đích: Đảm bảo chỉ có một thể hiện duy nhất của một lớp và cung cấp một điểm truy cập toàn cầu tới nó.
+    Ứng dụng: Khi cần một đối tượng duy nhất để quản lý trạng thái toàn cục.
+    Ví dụ: TaskManager là một Singleton để quản lý danh sách công việc.
+
+
+4. Observer Pattern
+
+    Mục đích: Cho phép một đối tượng (Subject) thông báo cho các đối tượng khác (Observers) khi có thay đổi.
+    Ứng dụng: Khi một thay đổi trong một đối tượng cần cập nhật các đối tượng khác mà không cần phụ thuộc lẫn nhau.
+    Ví dụ: Khi danh sách công việc thay đổi, TaskListRenderer sẽ tự động cập nhật giao diện người dùng.
+
+
+5. Iterator Pattern
+
+    Mục đích: Cung cấp cách thức duyệt qua các phần tử của một tập hợp mà không cần tiết lộ cấu trúc bên trong của tập hợp đó.
+    Ứng dụng: Khi cần duyệt qua các đối tượng trong một collection.
+    Ví dụ: Duyệt qua danh sách công việc (TaskList) mà không cần biết cấu trúc bên trong.
+
+
+6. Strategy Pattern
+
+    Mục đích: Cho phép thay đổi thuật toán hoặc hành vi của đối tượng tại thời điểm chạy.
+    Ứng dụng: Khi một hành vi hoặc thuật toán có thể thay đổi trong suốt quá trình thực thi.
+    Ví dụ: Chọn cách thức thực hiện công việc khác nhau cho các loại công việc (UrgentTask, NormalTask).
+
+
+7. Adapter Pattern
+
+    Mục đích: Chuyển đổi giao diện của một lớp thành giao diện mà một lớp khác mong đợi.
+    Ứng dụng: Khi bạn muốn sử dụng một lớp hiện có nhưng không phù hợp với yêu cầu hiện tại.
+    Ví dụ: Chuyển giao diện của các lớp phát nhạc khác nhau như VlcPlayer và Mp4Player thành một giao diện thống nhất để người dùng sử dụng.
+
+
+8. Facade Pattern
+
+    Mục đích: Cung cấp một giao diện đơn giản cho một hệ thống phức tạp, ẩn đi các chi tiết phức tạp của hệ thống.
+    Ứng dụng: Khi bạn muốn giảm sự phức tạp của hệ thống bằng cách cung cấp một giao diện đơn giản để tương tác.
+    Ví dụ: HomeTheaterFacade giúp người dùng dễ dàng điều khiển hệ thống âm thanh phức tạp chỉ qua vài phương thức đơn giản.
