@@ -1,0 +1,64 @@
+Các khái niệm chính về cơ sở dữ liệu:
+
+-   Table
+             | Field | Field | Field | Field |
+    | Record | id    | text  | number| date  |
+    | Record | id    | text  | number| date  |
+    | Record | id    | text  | number| date  |
+    | Record | id    | text  | number| date  |
+
+- DBMS (Database Management System): 
+    là các phần mềm giúp quản lí việc tạo, duy trì và sử dụng csdl. 
+    Nó cung cấp công cụ để truy lưu trữ, duy trì và xử lý dữ liệu.
+    Một số csdl phổ biến MongoDB, SQL Server, MySQL, PostgresSQL,....
+- Ngôn ngữ truy vấn (SQL - Structured Query Language):
+    Là ngôn ngữ tiêu chuẩn để truy vấn và quản lý cơ sở dữ liệu quan hệ. 
+
+- Các loại cơ sở dữ liệu:
+    + Cơ sở dữ liệu quan hệ (Relational Database): 
+        Lưu trữ dữ liệu dưới dạng các bảng với các mối quan hệ giữa chúng. 
+        Ví dụ: MySQL, PostgreSQL, Oracle.
+    
+    + Cơ sở dữ liệu NoSQL: 
+        Lưu trữ dữ liệu dưới dạng các cấu trúc khác như cặp khóa-giá trị, tài liệu, hoặc đồ thị. 
+        Ví dụ: MongoDB, Cassandra, Redis.
+    
+    + Cơ sở dữ liệu trong bộ nhớ (In-memory Database): 
+        Dữ liệu được lưu trữ chủ yếu trong bộ nhớ RAM để tăng tốc độ truy cập. 
+        Ví dụ: Redis, Memcached.
+    
+    + Cơ sở dữ liệu đám mây (Cloud Database): 
+        Được lưu trữ trên các nền tảng đám mây và có thể mở rộng dễ dàng. 
+        Ví dụ: Amazon RDS, Google Cloud SQL.
+
+- Truy vấn (Query): 
+    Cơ sở dữ liệu hỗ trợ truy vấn để tìm kiếm và lấy dữ liệu theo các điều kiện cụ thể. 
+    Ví dụ, trong SQL, bạn có thể viết câu lệnh truy vấn để tìm kiếm bản ghi, lọc dữ liệu hoặc thực hiện tính toán.
+
+Đặc điểm quan trọng của cơ sở dữ liệu:
+
+    - Tính toàn vẹn của dữ liệu (Data Integrity): 
+        Đảm bảo dữ liệu chính xác và nhất quán.
+
+    - Bảo mật (Security): 
+        Bảo vệ dữ liệu khỏi việc truy cập trái phép.
+
+    - Khả năng mở rộng (Scalability): 
+        Cho phép cơ sở dữ liệu phát triển và xử lý lượng dữ liệu ngày càng tăng.
+
+    - Đồng thời (Concurrency): 
+        Cho phép nhiều người dùng cùng truy cập và sửa đổi dữ liệu mà không bị xung đột.
+
+Các nguyên lý ACID:
+
+    - Atomicity (Tính nguyên tử): 
+        Giao dịch sẽ hoàn tất toàn bộ hoặc không thực hiện gì cả.
+    
+    - Consistency (Tính nhất quán): 
+        Dữ liệu luôn tuân thủ các quy tắc và ràng buộc.
+    
+    - Isolation (Tính cách ly): 
+        Các giao dịch không ảnh hưởng lẫn nhau khi thực hiện đồng thời.
+    
+    - Durability (Tính bền vững): 
+        Dữ liệu đã cam kết sẽ được lưu trữ vĩnh viễn và không bị mất.
