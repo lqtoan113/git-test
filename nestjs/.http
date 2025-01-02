@@ -1,0 +1,35 @@
+# The basic request
+
+GET http://localhost:3000/cats
+###
+POST http://localhost:3000/cats
+content-type: application/json
+
+{
+    "name":     "Ashley",
+    "age":      "4 years",
+    "breed":    "Yss"
+}
+###
+
+GET http://localhost:3000/cats/1
+###
+
+PUT http://localhost:3000/cats/1
+###
+
+DELETE http://localhost:3000/cats/1
+
+
+
+###
+
+GET http://localhost:3000/users
+###
+POST http://localhost:3000/users
+content-type: application/json
+
+{
+    "name":     "Ashley",
+    "email":    "toan123@132.com"
+}
