@@ -5,36 +5,30 @@ import { User } from 'src/entity/user.entity';
 
 @Controller('users') // Định nghĩa endpoint cho người dùng
 export class UserController {
-  constructor(private readonly userService: UserService) {}
+  constructor(private readonly userService: UserService) { }
 
-  // Tạo người dùng mới
   @Post()
   create(@Body() userData: User): Promise<User> {
-    return this.userService.create(userData); // Gọi service để tạo người dùng
+    return this.userService.create(userData);
   }
-
-  // Lấy danh sách tất cả người dùng
   @Get()
   findAll(): Promise<User[]> {
-    return this.userService.findAll(); // Gọi service để lấy danh sách người dùng
+    return this.userService.findAll();
   }
 
-  // Lấy người dùng theo ID
   @Get(':id')
   findOne(@Param('id') id: number): Promise<User> {
-    return this.userService.findOne(id); // Gọi service để tìm người dùng theo ID
+    return this.userService.findOne(id);
   }
 
-  // Cập nhật người dùng
   @Put(':id')
   update(@Param('id') id: number, @Body() userData: User): Promise<User> {
-    return this.userService.update(id, userData); // Gọi service để cập nhật người dùng
+    return this.userService.update(id, userData);
   }
 
-  // Xóa người dùng
   @Delete(':id')
   remove(@Param('id') id: number): Promise<void> {
-    return this.userService.remove(id); // Gọi service để xóa người dùng
+    return this.userService.remove(id);
   }
 }
 

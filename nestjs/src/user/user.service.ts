@@ -10,35 +10,30 @@ import { Repository } from 'typeorm';
 export class UserService {
   constructor(
     @InjectRepository(User)
-    private userRepository: Repository<User>, // Inject repository vào service
-  ) {}
+    private userRepository: Repository<User>,
+  ) { }
 
-  // Tạo mới một người dùng
   async create(userData: Partial<User>): Promise<User> {
-    const user = this.userRepository.create(userData); // Tạo đối tượng User mới từ dữ liệu
+    const user = this.userRepository.create(userData);
     console.log("Conect")
-    return this.userRepository.save(user); // Lưu vào cơ sở dữ liệu
+    return this.userRepository.save(user);
   }
 
-  // Lấy tất cả người dùng
   async findAll(): Promise<User[]> {
-    return this.userRepository.find(); // Truy vấn tất cả người dùng
+    return this.userRepository.find();
   }
 
-  // Tìm người dùng theo ID
   async findOne(id: number): Promise<User> {
-    return this.userRepository.findOne({ where: { id } }); // Truy vấn người dùng theo ID
+    return this.userRepository.findOne({ where: { id } });
   }
 
-  // Cập nhật người dùng
   async update(id: number, userData: Partial<User>): Promise<User> {
-    await this.userRepository.update(id, userData); // Cập nhật người dùng
-    return this.findOne(id); // Trả về thông tin người dùng sau khi cập nhật
+    await this.userRepository.update(id, userData);
+    return this.findOne(id);
   }
 
-  // Xóa người dùng
   async remove(id: number): Promise<void> {
-    await this.userRepository.delete(id); // Xóa người dùng theo ID
+    await this.userRepository.delete(id);
   }
 }
 
