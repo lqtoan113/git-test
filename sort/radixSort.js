@@ -51,7 +51,7 @@ async function countingSortByDigit(arr, exp) {
 
 // --- Chạy thử và đo thời gian ---
 async function runRadixSort() {
-    let array = Array.from({ length: 2000 }, () => Math.floor(Math.random() * 10000));
+    let array = Array.from({ length: 10 }, () => Math.floor(Math.random() * 10000));
 
     // Gọi hàm Radix Sort và theo dõi quá trình
     let start = performance.now();
